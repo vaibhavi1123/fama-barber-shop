@@ -6,7 +6,7 @@ function Header(){
         <header className="bg-black text-white p-4 animate-in slide-in-from-top fade-in duration-700">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
             <div className="flex items-center space-x-3">
-                    <img src={logo} alt="Fama Logo" className="h-10 w-10 object-contain" />
+                    <img src={logo} alt="Fama Logo" className="h-20 w-20 object-contain" />
                     <h1 className="text-xl font-bold">Fama Barber Shop</h1>
                 </div>
             <nav className="space-x-4">
