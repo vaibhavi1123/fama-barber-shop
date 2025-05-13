@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+
+
+.clip-top {
+  clip-path: inset(0 0 50% 0);
+  z-index: 2;
+}
+
+.clip-bottom {
+  clip-path: inset(50% 0 0 0);
+  z-index: 1;
+}
+
+@keyframes scissor-move {
+  0% {
+    left: -80px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: calc(100% + 80px);
+    opacity: 0;
+  }
+}
+
+.group:hover .animate-scissor-move {
+  animation: scissor-move 2s ease-in-out forwards;
+}
